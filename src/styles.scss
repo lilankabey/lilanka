@@ -2,3 +2,21 @@
 
 /* Importing Bootstrap SCSS file. */
 @import '~bootstrap/scss/bootstrap';
+
+/* Imporing Google Font Montserrat*/
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700&display=swap');
+
+
+:root {
+  --color-white: #ffffff;
+  --color-black: #000000;
+  --color-blue: #2e6bd1;
+  --color-orange: #ff9f1c;
+  --color-green: #31d422;
+  --color-grey-1: #8a8fa3;
+}
+
+// html {
+//   box-sizing: border-box;
+//   font-size: 62.5%; //1rem = 10px, 10px/16px = 62.5%
+// }

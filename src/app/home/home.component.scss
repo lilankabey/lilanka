@@ -1,0 +1,190 @@
+//////////////////////////////////////
+//////////// Home Section ////////////
+//////////////////////////////////////
+.section-home {
+  height: calc(100vh - 115px);
+  margin-top: 90px;
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+}
+
+
+.title {
+  text-transform: uppercase;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  line-height: 1.5;
+
+
+  &__animatedBlack {
+    display: inline-block;
+    color: var(--color-white);
+    position: relative;
+    padding: 0 20px;
+  }
+
+
+  &__bg-black {
+    height: 100%;
+    visibility: inherit;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: -1;
+    background: var(--color-black);
+
+    animation-name: moveInRight;
+    animation-duration: 3s;
+  }
+
+  &__text-1 {
+    animation-name: textMoveInRight;
+  }
+
+  &__animatedOrange {
+    display: inline-block;
+    color: var(--color-white);
+    position: relative;
+    padding: 0 20px;
+  }
+
+  &__bg-orange {
+    height: 100%;
+    visibility: inherit;
+    opacity: 1;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    background: var(--color-orange);
+
+    animation-name: moveInLeft;
+    animation-duration: 2s;
+  }
+
+  &__text-2 {
+    animation-name: textMoveInRight;
+  }
+}
+
+.sub-title {
+  animation: moveInUp;
+  animation-duration: 2s;
+}
+
+.gender {
+  font-size: 1.1rem;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 500;
+  position: absolute;
+  right: 0;
+
+  animation: genderAnimation;
+  animation-duration: 3s;
+}
+
+.button {
+  margin: 2rem 0;
+}
+
+@keyframes moveInRight {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 100%;
+  }
+}
+
+@keyframes moveInLeft {
+  0% {
+    width: 0;
+  }
+
+  100% {
+    width: 100%;
+  }
+}
+
+@keyframes moveInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(-80px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes genderAnimation {
+  0% {
+    opacity: 0;
+    transform: translateX(-50px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+
+
+
+.image-container {
+  max-width: 430px;
+  margin: 0 auto;
+  position: relative;
+
+  animation: imageIn;
+  animation-duration: 2s;
+}
+
+.image-container img {
+  position: relative;
+  z-index: 5;
+  top: 10px;
+  left: 20px;
+}
+
+.image-container::before {
+  position: absolute;
+  content: '';
+  width: 100%;
+  height: 82%;
+  border: 20px solid var(--color-blue);
+  border-bottom: 0;
+  top: 52%;
+  left: 0;
+  transform: translateY(-50%);
+}
+
+.image-container::after {
+  position: absolute;
+    content: '';
+    width: 100%;
+    height: 20px;
+    background-color: var(--color-blue);
+    left: 0;
+    bottom: 40px;
+    z-index: 11;
+}
+
+
+@keyframes imageIn {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+//////////////////////////////////////
+//////// End - Home Section //////////
+//////////////////////////////////////
