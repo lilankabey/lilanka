@@ -1,0 +1,49 @@
+.navigation {
+  box-shadow: 0 0 29px 0 rgba(134,134,134,0.25);
+  padding: 30px 0;
+}
+
+
+.nav-item {
+  margin-left: 30px;
+}
+
+.nav-item.active a {
+  color: var(--color-blue);
+}
+
+.nav-item.active a::before {
+  height: 2.81rem;
+}
+
+.nav-item:hover a::before {
+  height: 2.81rem;
+}
+
+.nav-item:hover a {
+  color: var(--color-blue);
+}
+
+.nav-item a {
+  text-transform: uppercase;
+  color: var(--color-grey-1);
+  font-weight: 500;
+  transition: all 0.3s ease-out 0s;
+  position: relative;
+  text-decoration: none;
+  display: inline-block;
+}
+
+.nav-item a::before {
+  content: "";
+  position: absolute;
+  top: -200%;
+  left: 50%;
+  width: 3px;
+  height: 0;
+  background-color: var(--color-blue);
+  transform: translateX(-50%);
+  -webkit-transform: translateX(-50%);
+  transition: all 0.3s ease-out 0s;
+}
+
