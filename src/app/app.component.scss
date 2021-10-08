@@ -1,0 +1,28 @@
+.content {
+  overflow: hidden;
+  position: relative;
+}
+
+.paths {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -2;
+
+  &__svg {
+    width: 100vw;
+    height: auto;
+    shape-rendering: crispEdges;
+  }
+
+  &__svg:not(:root) {
+    overflow: hidden;
+  }
+
+  &__svg g {
+    stroke-width: 2;
+  }
+}
+

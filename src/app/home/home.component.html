@@ -1,4 +1,4 @@
-<app-header></app-header>
+
 <!-- Home Section -->
 <section id="home" class="section-home align-items-center d-flex">
   <div class="container">
@@ -18,8 +18,57 @@
           </div>
         </h1>
         <p class="gender">(he/him/his)</p>
-        <button class="button">Download Resume</button>
+
+        <!-- CV Link -->
+        <a class="download-link" href="https://www.dropbox.com/s/vd3yr0me7tr5a3d/Lilanka%20Abeysiriwardana.pdf?dl=0" target="_blank" rel="noopener noreferrer">
+          Download Résumé
+        </a>
+        <!-- Social Meadia -->
+        <div class="row connects">
+          <div class="connects__line"></div>
+          <!-- Facebook -->
+          <a href="https://www.facebook.com/lilankaravinath" target="_blank" rel="noopener noreferrer">
+            <div class="connects__icon-box">
+              <svg class="connects__icon">
+                <use xlink:href="../../assets/symbol-defs.svg#icon-facebook"></use>
+              </svg>
+            </div>
+          </a>
+          <!-- Twitter -->
+          <a href="https://twitter.com/iamlilanka" target="_blank" rel="noopener noreferrer">
+            <div class="connects__icon-box">
+              <svg class="connects__icon">
+                <use xlink:href="../../assets/symbol-defs.svg#icon-twitter"></use>
+              </svg>
+            </div>
+          </a>
+          <!-- GitHub -->
+          <a href="http://github.com/lilankaravinath/" target="_blank" rel="noopener noreferrer">
+            <div class="connects__icon-box">
+              <svg class="connects__icon">
+                <use xlink:href="../../assets/symbol-defs.svg#icon-github"></use>
+              </svg>
+            </div>
+          </a>
+          <!-- LinkedIn -->
+          <a href="https://www.linkedin.com/in/lilankaravinath/" target="_blank" rel="noopener noreferrer">
+            <div class="connects__icon-box">
+              <svg class="connects__icon">
+                <use xlink:href="../../assets/symbol-defs.svg#icon-linkedin2"></use>
+              </svg>
+            </div>
+          </a>
+          <!-- Stackoverflow -->
+          <a href="https://stackoverflow.com/users/7865647/lilanka-ravinath" target="_blank" rel="noopener noreferrer">
+            <div class="connects__icon-box">
+              <svg class="connects__icon">
+                <use xlink:href="../../assets/symbol-defs.svg#icon-stackoverflow"></use>
+              </svg>
+            </div>
+          </a>
+        </div>
       </div>
+      <!-- Hero Image -->
       <div class="col-lg-6 offset-xl-1">
         <div class="image-container d-none d-lg-block">
           <img src="../../assets/hero_lilanka.png" alt="Lilanka Abeysiriwardana">
@@ -32,25 +81,704 @@
 <!-- End - Home Section -->
 
 <!-- Projects Section -->
-<section id="projects"></section>
+<section id="projects" class="section-projects">
+  <div class="container">
+    <!-- Section Header -->
+    <div class="row section-row">
+      <h2 class="section-header">PROJECTS</h2>
+    </div>
+    <!-- End - Section Header -->
+
+    <!-- Latest Projects -->
+    <div class="row justify-content-center">
+      <p class="projects-subtitle">Latest Projects</p>
+    </div>
+
+    <div class="row ">
+      <!-- Project - Takeaway -->
+      <div class="col-lg-4 col-md-6">
+        <div class="card" style="position: relative;">
+          <img class="card-img card-img-top" src="../../assets/takeaway.JPG" alt="takeaway">
+          <div class="card-body">
+            <h5 class="card-title">Takeaway</h5>
+            <h6 class="card-subtitle mb-2 text-muted">Individual Project</h6>
+            <p class="card-text card-description">Takeaway is a restaurants management and food delivery system.</p>
+            <p class="card-text"><small class="text-muted">Year: 2020</small></p>
+            <div class="icon-box d-flex">
+              <a href="https://github.com/lilankaravinath/takeaway" target="_blank" rel="noopener noreferrer">
+                <svg class="icon-box__icon">
+                  <use xlink:href="../../assets/symbol-defs.svg#icon-github"></use>
+                </svg>
+              </a>
+              <a (click)="onRevealClose(1)">
+                <svg class="icon-box__icon">
+                  <use xlink:href="../../assets/symbol-defs.svg#icon-more_vert"></use>
+                </svg>
+              </a>
+            </div>
+          </div>
+          <div class="card-reveal" [@openClose]="isOpenP1 ? 'open' : 'closed'">
+            <div class="card-reaveal__content">
+              <div class="card-reveal__top">
+                <p class="card-reveal__title">Technologies</p>
+                <a (click)="onRevealClose(1)">
+                  <svg class="reveal__icon">
+                    <use xlink:href="../../assets/symbol-defs.svg#icon-cancel-circle"></use>
+                  </svg>
+                </a>
+              </div>
+              <ul>
+                <li>Angular</li>
+                <li>Express</li>
+                <li>NodeJS</li>
+                <li>MongoDB</li>
+                <li>Sass</li>
+                <li>HTML</li>
+              </ul>
+            </div>
+
+            <div class="icon-box d-flex">
+              <a href="https://github.com/lilankaravinath/takeaway" target="_blank" rel="noopener noreferrer">
+                <svg class="icon-box__icon">
+                  <use xlink:href="../../assets/symbol-defs.svg#icon-github"></use>
+                </svg>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+      <!-- Project - Natour -->
+      <div class="col-lg-4 col-md-6">
+        <div class="card">
+          <img class="card-img card-img-top" src="../../assets/natours.JPG" alt="takeaway">
+          <div class="card-body">
+            <h5 class="card-title">Natours</h5>
+            <h6 class="card-subtitle mb-2 text-muted">Individual Project</h6>
+            <p class="card-text card-description">Natours is a responsive web template for a fictional company that offers tours in the nature.</p>
+            <p class="card-text"><small class="text-muted">Year: 2020</small></p>
+            <div class="icon-box d-flex">
+              <a href="https://lilankaravinath.github.io/natours/" target="_blank" rel="noopener noreferrer">
+                <svg class="icon-box__icon icon-box__icon-link">
+                  <use xlink:href="../../assets/symbol-defs.svg#icon-link"></use>
+                </svg>
+              </a>
+              <a href="https://github.com/lilankaravinath/natours/" target="_blank" rel="noopener noreferrer">
+                <svg class="icon-box__icon">
+                  <use xlink:href="../../assets/symbol-defs.svg#icon-github"></use>
+                </svg>
+              </a>
+              <a (click)="onRevealClose(2)">
+                <svg class="icon-box__icon">
+                  <use xlink:href="../../assets/symbol-defs.svg#icon-more_vert"></use>
+                </svg>
+              </a>
+            </div>
+          </div>
+          <!-- Card Reveal -->
+          <div class="card-reveal" [@openClose]="isOpenP2 ? 'open' : 'closed'">
+            <div class="card-reaveal__content">
+              <div class="card-reveal__top">
+                <p class="card-reveal__title">Technologies</p>
+                <a (click)="onRevealClose(2)">
+                  <svg class="reveal__icon">
+                    <use xlink:href="../../assets/symbol-defs.svg#icon-cancel-circle"></use>
+                  </svg>
+                </a>
+              </div>
+              <ul>
+                <li>JavaScript</li>
+                <li>Sass</li>
+                <li>HTML</li>
+              </ul>
+            </div>
+
+            <div class="icon-box d-flex">
+              <a href="https://github.com/lilankaravinath/takeaway" target="_blank" rel="noopener noreferrer">
+                <svg class="icon-box__icon">
+                  <use xlink:href="../../assets/symbol-defs.svg#icon-github"></use>
+                </svg>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+       <!-- Project - Trillio -->
+      <div class="col-lg-4 col-md-6">
+        <div class="card">
+          <img class="card-img" src="../../assets/trillo.JPG" alt="takeaway">
+          <div class="card-body">
+            <h5 class="card-title">Trillo</h5>
+            <h6 class="card-subtitle mb-2 text-muted">Individual Project</h6>
+            <p class="card-text card-description">Trillo is responsive web template for a fictional booking app. User can book a hotel, a flight, a car and a tour all in one platform.</p>
+            <p class="card-text"><small class="text-muted">Year: 2020</small></p>
+            <div class="icon-box d-flex">
+              <a href="https://lilankaravinath.github.io/Trillo" target="_blank" rel="noopener noreferrer">
+                <svg class="icon-box__icon icon-box__icon-link">
+                  <use xlink:href="../../assets/symbol-defs.svg#icon-link"></use>
+                </svg>
+              </a>
+              <a href="https://github.com/lilankaravinath/Trillo/" target="_blank" rel="noopener noreferrer">
+                <svg class="icon-box__icon">
+                  <use xlink:href="../../assets/symbol-defs.svg#icon-github"></use>
+                </svg>
+              </a>
+              <a (click)="onRevealClose(3)">
+                <svg class="icon-box__icon">
+                  <use xlink:href="../../assets/symbol-defs.svg#icon-more_vert"></use>
+                </svg>
+              </a>
+            </div>
+          </div>
+          <!-- Card Reveal -->
+          <div class="card-reveal" [@openClose]="isOpenP3 ? 'open' : 'closed'">
+            <div class="card-reaveal__content">
+              <div class="card-reveal__top">
+                <p class="card-reveal__title">Technologies</p>
+                <a (click)="onRevealClose(3)">
+                  <svg class="reveal__icon">
+                    <use xlink:href="../../assets/symbol-defs.svg#icon-cancel-circle"></use>
+                  </svg>
+                </a>
+              </div>
+              <ul>
+                <li>JavaScript</li>
+                <li>Sass</li>
+                <li>HTML</li>
+              </ul>
+            </div>
+
+            <div class="icon-box d-flex">
+              <a href="https://github.com/lilankaravinath/takeaway" target="_blank" rel="noopener noreferrer">
+                <svg class="icon-box__icon">
+                  <use xlink:href="../../assets/symbol-defs.svg#icon-github"></use>
+                </svg>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="row">
+      <!-- Project - Outdoor Adventure -->
+      <div class="col-lg-4 col-md-6">
+        <div class="card">
+          <img class="card-img card-img-top" src="../../assets/outdoor_adventures.JPG" alt="takeaway">
+          <div class="card-body">
+            <h5 class="card-title">Outdoor Adventures</h5>
+            <h6 class="card-subtitle mb-2 text-muted">Individual Project</h6>
+            <p class="card-text">Outdoor Adventure is a responsive web template for a fictional company that offers tours in the nature.</p>
+            <p class="card-text"><small class="text-muted">Year: 2020</small></p>
+            <div class="icon-box d-flex">
+              <a href="https://lilankaravinath.github.io/outdoor-adventures/" target="_blank" rel="noopener noreferrer">
+                <svg class="icon-box__icon icon-box__icon-link">
+                  <use xlink:href="../../assets/symbol-defs.svg#icon-link"></use>
+                </svg>
+              </a>
+              <a href="https://github.com/lilankaravinath/outdoor-adventures" target="_blank" rel="noopener noreferrer">
+                <svg class="icon-box__icon">
+                  <use xlink:href="../../assets/symbol-defs.svg#icon-github"></use>
+                </svg>
+              </a>
+              <a (click)="onRevealClose(4)">
+                <svg class="icon-box__icon">
+                  <use xlink:href="../../assets/symbol-defs.svg#icon-more_vert"></use>
+                </svg>
+              </a>
+            </div>
+          </div>
+          <!-- Card Reveal -->
+          <div class="card-reveal" [@openClose]="isOpenP4 ? 'open' : 'closed'">
+            <div class="card-reaveal__content">
+              <div class="card-reveal__top">
+                <p class="card-reveal__title">Technologies</p>
+                <a (click)="onRevealClose(4)">
+                  <svg class="reveal__icon">
+                    <use xlink:href="../../assets/symbol-defs.svg#icon-cancel-circle"></use>
+                  </svg>
+                </a>
+              </div>
+              <ul>
+                <li>JavaScript</li>
+                <li>Sass</li>
+                <li>HTML</li>
+              </ul>
+            </div>
+
+            <div class="icon-box d-flex">
+              <a href="https://github.com/lilankaravinath/takeaway" target="_blank" rel="noopener noreferrer">
+                <svg class="icon-box__icon">
+                  <use xlink:href="../../assets/symbol-defs.svg#icon-github"></use>
+                </svg>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- End - Latest Projects -->
+
+    <!-- Other Projects -->
+    <div class="row justify-content-center">
+      <p class="projects-subtitle">Other Projects</p>
+    </div>
+
+
+    <div class="row">
+      <!-- Project - EMS -->
+      <div class="col-lg-4 col-md-6">
+        <div class="card">
+          <div class="card-body">
+            <h5 class="card-title">EMS</h5>
+            <h6 class="card-subtitle mb-2 text-muted">Group Project</h6>
+            <p class="card-text card-description">EMS (Examination of Management System) is a web application which made for Faculty of Applied Sciences of
+              Sabaragamuwa University of Sri Lanka (SUSL).</p>
+            <p class="card-text"><small class="text-muted">Year: 2017</small></p>
+            <div class="icon-box d-flex">
+              <svg class="icon-box__icon">
+                <use xlink:href="../../assets/symbol-defs.svg#icon-github"></use>
+              </svg>
+              <a (click)="onRevealClose(5)">
+                <svg class="icon-box__icon">
+                  <use xlink:href="../../assets/symbol-defs.svg#icon-more_vert"></use>
+                </svg>
+              </a>
+            </div>
+          </div>
+          <!-- Card Reveal -->
+          <div class="card-reveal" [@openClose]="isOpenP5 ? 'open' : 'closed'">
+            <div class="card-reaveal__content">
+              <div class="card-reveal__top">
+                <p class="card-reveal__title">Technologies</p>
+                <a (click)="onRevealClose(5)">
+                  <svg class="reveal__icon">
+                    <use xlink:href="../../assets/symbol-defs.svg#icon-cancel-circle"></use>
+                  </svg>
+                </a>
+              </div>
+              <ul>
+                <li>PHP</li>
+                <li>JQuery</li>
+                <li>JavaScript</li>
+                <li>MySQL</li>
+                <li>Bootstrap</li>
+                <li>HTML</li>
+              </ul>
+            </div>
+
+            <div class="icon-box d-flex">
+              <a href="https://github.com/lilankaravinath/takeaway" target="_blank" rel="noopener noreferrer">
+                <svg class="icon-box__icon">
+                  <use xlink:href="../../assets/symbol-defs.svg#icon-github"></use>
+                </svg>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Project - MEAN -->
+      <div class="col-lg-4 col-md-6">
+        <div class="card">
+          <div class="card-body">
+            <h5 class="card-title">MEAN</h5>
+            <h6 class="card-subtitle mb-2 text-muted">Udemy Project</h6>
+            <p class="card-text card-description">The basic CRUD web application created using MEAN stack.</p>
+            <p class="card-text"><small class="text-muted">Year: 2018</small></p>
+            <div class="icon-box d-flex">
+              <a href="https://github.com/lilankaravinath/mean-course" target="_blank" rel="noopener noreferrer">
+                <svg class="icon-box__icon">
+                  <use xlink:href="../../assets/symbol-defs.svg#icon-github"></use>
+                </svg>
+              </a>
+              <a (click)="onRevealClose(6)">
+                <svg class="icon-box__icon">
+                  <use xlink:href="../../assets/symbol-defs.svg#icon-more_vert"></use>
+                </svg>
+              </a>
+            </div>
+          </div>
+
+          <!-- Card Reveal -->
+          <div class="card-reveal" [@openClose]="isOpenP6 ? 'open' : 'closed'">
+            <div class="card-reaveal__content">
+              <div class="card-reveal__top">
+                <p class="card-reveal__title">Technologies</p>
+                <a (click)="onRevealClose(6)">
+                  <svg class="reveal__icon">
+                    <use xlink:href="../../assets/symbol-defs.svg#icon-cancel-circle"></use>
+                  </svg>
+                </a>
+              </div>
+              <ul>
+                <li>Angular</li>
+                <li>NodeJS</li>
+                <li>Express</li>
+                <li>MongoDB</li>
+                <li>Mongoose</li>
+                <li>Bootstrap</li>
+                <li>HTML</li>
+              </ul>
+            </div>
+
+            <div class="icon-box d-flex">
+              <a href="https://github.com/lilankaravinath/takeaway" target="_blank" rel="noopener noreferrer">
+                <svg class="icon-box__icon">
+                  <use xlink:href="../../assets/symbol-defs.svg#icon-github"></use>
+                </svg>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Project - PCMARKET -->
+      <div class="col-lg-4 col-md-6">
+        <div class="card">
+          <div class="card-body">
+            <h5 class="card-title">PCMARKET</h5>
+            <h6 class="card-subtitle mb-2 text-muted">Group Project</h6>
+            <p class="card-text card-description">PCMARKET is online selling system for computer shop.</p>
+            <p class="card-text"><small class="text-muted">Year: 2017</small></p>
+            <div class="icon-box d-flex">
+
+                <svg class="icon-box__icon">
+                  <use xlink:href="../../assets/symbol-defs.svg#icon-github"></use>
+                </svg>
+              <a (click)="onRevealClose(7)">
+                <svg class="icon-box__icon">
+                  <use xlink:href="../../assets/symbol-defs.svg#icon-more_vert"></use>
+                </svg>
+              </a>
+            </div>
+          </div>
+
+          <!-- Card Reveal -->
+          <div class="card-reveal" [@openClose]="isOpenP7 ? 'open' : 'closed'">
+            <div class="card-reaveal__content">
+              <div class="card-reveal__top">
+                <p class="card-reveal__title">Technologies</p>
+                <a (click)="onRevealClose(7)">
+                  <svg class="reveal__icon">
+                    <use xlink:href="../../assets/symbol-defs.svg#icon-cancel-circle"></use>
+                  </svg>
+                </a>
+              </div>
+              <ul>
+                <li>PHP</li>
+                <li>JQuery</li>
+                <li>JavaScript</li>
+                <li>MySQL</li>
+                <li>Bootstrap</li>
+                <li>HTML</li>
+              </ul>
+            </div>
+
+            <div class="icon-box d-flex">
+              <a href="https://github.com/lilankaravinath/takeaway" target="_blank" rel="noopener noreferrer">
+                <svg class="icon-box__icon">
+                  <use xlink:href="../../assets/symbol-defs.svg#icon-github"></use>
+                </svg>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
 <!-- End - Projects Section -->
 
 <!-- Skills Section -->
-<section id="skills"></section>
+<section id="skills" class="section-skills">
+  <div class="container">
+    <!-- Section Header -->
+    <div class="row section-row">
+      <h2 class="section-header">Skills</h2>
+    </div>
+    <!-- End - Section Header -->
+
+    <!-- Front-End Skills -->
+    <div class="row justify-content-center">
+      <p class="projects-subtitle">Front-End</p>
+    </div>
+    <div class="row justify-content-center skills__img-row">
+      <div class="col-md-1 col-sm-2 col-3 skills__img-box">
+        <img class="skills__img" src="../../assets/skills/html5.png" alt="html5">
+      </div>
+      <div class="col-lg-1 col-md-1 col-sm-2 col-3 skills__img-box">
+        <img class="skills__img" src="../../assets/skills/css3.png" alt="css3">
+      </div>
+      <div class="col-lg-1 col-md-1 col-sm-2 col-3 skills__img-box">
+        <img class="skills__img" src="../../assets/skills/sass.png" alt="sass">
+      </div>
+      <div class="col-lg-1 col-md-1 col-sm-2 col-3 skills__img-box">
+        <img class="skills__img" src="../../assets/skills/bootstrap.png" alt="bootstrap">
+      </div>
+      <div class="col-lg-1 col-md-1 col-sm-2 col-3 skills__img-box">
+        <img class="skills__img" src="../../assets/skills/angular material.png" alt="angular material">
+      </div>
+      <div class="col-lg-1 col-md-1 col-sm-2 col-3 skills__img-box">
+        <img class="skills__img" src="../../assets/skills/angular.png" alt="angular">
+      </div>
+      <div class="col-lg-1 col-md-1 col-sm-2 col-3 skills__img-box">
+        <img class="skills__img" src="../../assets/skills/javascript.png" alt="javascript">
+      </div>
+      <div class="col-lg-1 col-md-1 col-sm-2 col-3 skills__img-box">
+        <img class="skills__img" src="../../assets/skills/typescript.png" alt="typescript">
+      </div>
+    </div>
+
+
+    <!-- Back-End Skills -->
+    <div class="row justify-content-center">
+      <p class="projects-subtitle">Back-End</p>
+    </div>
+    <div class="row justify-content-center skills__img-row">
+      <div class="col-lg-1 col-md-1 col-sm-2 col-3 skills__img-box">
+        <img class="skills__img" src="../../assets/skills/mongoosejs.jpg" alt="mongoose">
+      </div>
+      <div class="col-lg-1 col-md-1 col-sm-2 col-3 skills__img-box">
+        <img class="skills__img" src="../../assets/skills/expressjs.png" alt="expressjs">
+      </div>
+      <div class="col-lg-1 col-md-1 col-sm-2 col-3 skills__img-box">
+        <img class="skills__img" src="../../assets/skills/nodejs.png" alt="nodejs">
+      </div>
+      <div class="col-lg-1 col-md-1 col-sm-2 col-3 skills__img-box">
+        <img class="skills__img" src="../../assets/skills/mongodb.png" alt="mongodb">
+      </div>
+      <div class="col-lg-1 col-md-1 col-sm-2 col-3 skills__img-box">
+        <img class="skills__img" src="../../assets/skills/mysql.png" alt="mysql">
+      </div>
+    </div>
+
+
+    <!-- Other Skills -->
+    <div class="row justify-content-center">
+      <p class="projects-subtitle">Other</p>
+    </div>
+    <div class="row justify-content-center skills__img-row">
+      <div class="col-lg-1 col-md-1 col-sm-2 col-3 skills__img-box">
+        <img class="skills__img" src="../../assets/skills/git.png" alt="git">
+      </div>
+      <div class="col-lg-1 col-md-1 col-sm-2 col-3 skills__img-box">
+        <img class="skills__img" src="../../assets/skills/github.png" alt="github">
+      </div>
+      <div class="col-lg-1 col-md-1 col-sm-2 col-3 skills__img-box">
+        <img class="skills__img" src="../../assets/skills/gitlab.png" alt="gitlab">
+      </div>
+      <div class="col-lg-1 col-md-1 col-sm-2 col-3 skills__img-box">
+        <img class="skills__img" src="../../assets/skills/photoshop.png" alt="adobe photoshop">
+      </div>
+      <div class="col-lg-1 col-md-1 col-sm-2 col-3 skills__img-box">
+        <img class="skills__img" src="../../assets/skills/lightroom.png" alt="adobe lightroom">
+      </div>
+      <div class="col-lg-1 col-md-1 col-sm-2 col-3 skills__img-box">
+        <img class="skills__img" src="../../assets/skills/illustrator.png" alt="adobe illustrator">
+      </div>
+    </div>
+
+
+  </div>
+</section>
 <!-- End - Skills Section -->
 
 <!-- Experience Section -->
-<section id="experience"></section>
+<section id="experience" class="section-experience">
+  <div class="container">
+    <!-- Section Header -->
+    <div class="row section-row">
+      <h2 class="section-header">Experience</h2>
+    </div>
+    <!-- End - Section Header -->
+
+    <!-- Pansoft GmbH -->
+    <div class="card card-experience">
+      <div class="card-body">
+        <div class="row">
+          <div class="col-md-2 col-sm-12">
+            <img class="img-experience" src="../../assets/experience/pansoft.png" alt="Pansoft GmbH">
+          </div>
+          <div class="col-md-8 col-sm-12">
+            <a href=""><h5 class="card-title">Pansoft GmbH</h5></a>
+            <h6 class="card-subtitle mb-2 text-muted">Karlsruhe, Germany</h6>
+          </div>
+        </div>
+        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+        <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+      </div>
+    </div>
+  </div>
+
+</section>
 <!-- End - Experience Section -->
 
+<!-- Education Section -->
+<section id="education" class="section-education">
+  <div class="container">
+    <!-- Section Header -->
+    <div class="row section-row">
+      <h2 class="section-header">Education</h2>
+    </div>
+    <!-- End - Section Header -->
+
+    <!-- Sabaragamuwa University -->
+    <div class="card card-education">
+      <div class="card-body">
+        <div class="row">
+          <div class="col-md-2 col-sm-12">
+            <img class="img-experience" src="../../assets/education/susl.jpg" alt="SUSL">
+          </div>
+          <div class="col-md-8 col-sm-12">
+            <a href=""><h5 class="card-title">Sabaragamuwa University of Sri Lanka</h5></a>
+            <h6 class="card-subtitle mb-2 text-muted">Belihuloya, Sri Lanka</h6>
+          </div>
+        </div>
+        <ul class="card-ul">
+          <li>Bachelor of Science (Special) in Computer Science and Technology</li>
+        </ul>
+        <!-- <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p> -->
+      </div>
+    </div>
+    <!-- USCS -->
+    <div class="card card-education">
+      <div class="card-body">
+        <div class="row">
+          <div class="col-md-2 col-sm-12">
+            <img class="img-experience" src="../../assets/education/ucsc.jpg" alt="UCSC">
+          </div>
+          <div class="col-md-8 col-sm-12">
+            <a href=""><h5 class="card-title">University of Colombo School of Computing</h5></a>
+            <h6 class="card-subtitle mb-2 text-muted">Colombo 07, Sri Lanka</h6>
+          </div>
+        </div>
+        <ul class="card-ul">
+          <li>Higher Diploma in Information Technology (HDIT)</li>
+          <li>Dimploma in Information Technology (DIT)</li>
+        </ul>
+
+
+        <!-- <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p> -->
+      </div>
+    </div>
+  </div>
+</section>
+<!-- End - Education Section -->
+
 <!-- About Section -->
-<section id="about"></section>
+<section id="about" class="section-about">
+  <div class="container">
+    <!-- Section Header -->
+    <div class="row section-row">
+      <h2 class="section-header">About</h2>
+    </div>
+    <!-- End - Section Header -->
+
+    <!-- description -->
+    <div class="card card-about">
+      <div class="card-body" >
+        <h2 class="card-about__header">Hi There! &nbsp;I'm Lilanka</h2>
+        <p class="card-paragraph">
+          I am a recent graduate of Sabaragamuwa University of Sri Lanka with a B.Sc. (Special) in Computer Science and Technology.
+          As a highly motivated dynamic and hardworking individual, I’m familiar with a wide range of programming languages.
+          I enjoy using my obsessive attention to detail, my unequivocal love for making things, and my mission-driven work ethic to literally change the world.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
 <!-- End - About Section -->
 
 <!-- Contact Section -->
-<section id="contact"></section>
+<section id="contact" class="section-contact">
+  <div class="container">
+    <!-- Section Header -->
+    <div class="row section-row">
+      <h2 class="section-header">Contact</h2>
+    </div>
+    <!-- End - Section Header -->
+
+    <div class="row justify-content-center">
+      <p class="projects-subtitle">Get In Touch</p>
+    </div>
+
+    <!-- Email -->
+    <div class="row">
+      <div class="col-lg-4 col-md-6">
+        <div class="card">
+          <div class="contact__icon-box">
+            <svg class="contact__icon">
+              <use xlink:href="../../assets/symbol-defs.svg#icon-linkedin2"></use>
+            </svg>
+          </div>
+          <div class="card-body contact__body">
+            <div class="contact__title">LinkedIn</div>
+            <div class="contact__description"><a href="https://www.linkedin.com/in/lilankaravinath/" target="_blank" rel="noopener noreferrer">www.linkedin.com/lilankaravinath</a></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-4 col-md-6">
+        <div class="card">
+          <div class="contact__icon-box">
+            <svg class="contact__icon">
+              <use xlink:href="../../assets/symbol-defs.svg#icon-envelop"></use>
+            </svg>
+          </div>
+          <div class="card-body contact__body">
+            <div class="contact__title">Email</div>
+            <div class="contact__description">inbox.lilanka@gmail.com</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-4 col-md-6">
+        <div class="card">
+          <div class="contact__icon-box">
+            <svg class="contact__icon">
+              <use xlink:href="../../assets/symbol-defs.svg#icon-whatsapp"></use>
+            </svg>
+          </div>
+          <div class="card-body contact__body">
+            <div class="contact__title">WhatsApp</div>
+            <div class="contact__description">
+              +94 71 388 2199
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- <div class="card">
+      <div class="card-body">
+        <div class="contact__title">
+          <h2 class="contact__title-header">Get In Touch</h2>
+        </div>
+
+        <div class="contact__icon-box">
+          <svg class="contact__icon">
+            <use xlink:href="../../assets/symbol-defs.svg#icon-envelop"></use>
+          </svg>
+          <p class="contact__text">inbox.lilanka@gmail.com</p>
+        </div>
+
+      </div>
+    </div> -->
+  </div>
+</section>
 <!-- End - Contact Section -->
 
 <!-- Footer -->
-<footer id="footer"></footer>
+<footer id="footer" class="footer">
+  <div class="container">
+    <div class="row align-items-center">
+      <p class="footer-paragraph">Copyright &copy; 2021 Lilanka Abeysiriwardana. All right reserved.</p>
+    </div>
+  </div>
+</footer>
 <!-- End - Footer -->
